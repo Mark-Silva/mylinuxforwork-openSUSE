@@ -1,0 +1,26 @@
+1) Add yourself to the flatpak and input groups. 
+2) Run the file install.sh (it will call the flatpak.sh and the flatpak.sh will call the packages.sh file.
+3) The packages.sh file will launch the fedora ML4W installer, run it, and IGNORE THE ERRORS! 
+   Set your dotfiles location, if you wish or if you want main or rolling release. 
+   DO NOT REBOOT YET WHEN IT ASKS YOU TOO. 
+
+
+NOTES:
+
+       Run the sddm.sh file only if you installed OpenSUSE in server mode (Text Mode). If you installed plasma alongside Hyprland, don't run it.
+       The file changes the run level from 3 to 5 and enables SDDM.
+
+       Mission Center may fail to install due to a repo issue I have no control over that.
+
+       I do not have an NVIDIA Card. I CANNOT help with that, sorry.
+
+Known Issues:
+
+the custom.conf disables kitty shell integration, as kitty runs in 
+I believe POSIX Mode applies to Bash only, and ohmyposh refuses to run in this mode.
+
+The Modules.json will allow you to see how many updates zypper has, like in Arch. I find it to be off as to how many updates it has, though. I took that module from SUSE default sway config.
+
+The gnome polkit path is different in OpenSUSE; the line in autostart.conf should be:
+
+exec-once = /usr/libexec/polkit-gnome-authentication-agent-1
