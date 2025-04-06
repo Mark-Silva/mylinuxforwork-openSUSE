@@ -14,8 +14,7 @@ sudo opi -n qt6-wayland-devel
 sudo opi -n libqt5-qtwayland 
 sudo opi -n libqt5-qtwayland-devel 
 sudo opi -n google-chrome 
-sudo opi -n vscode
-sudo opi -n mission-center 
+sudo opi -n vscode 
 
 echo Running pipx to install hyprshade, pyfox, pywal16
 
